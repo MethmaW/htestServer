@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 	res.send("Test get");
 });
 
-app.listen(4000, () =>
+app.listen(process.env.PORT, () =>
 	console.log(
 		colors.yellow.bold(`🚀 Server is running on`),
 		colors.yellow.underline(`http://localhost:4000`)
